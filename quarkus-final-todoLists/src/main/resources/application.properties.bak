@@ -1,0 +1,22 @@
+quarkus.datasource.db-kind=mysql
+quarkus.datasource.jdbc.url=jdbc:mysql://localhost:3306/tododb
+quarkus.datasource.username=root
+quarkus.datasource.password=chakuli
+quarkus.hibernate-orm.log.sql=true
+
+# quarkus.hibernate-orm.database.generation=drop-and-create
+quarkus.hibernate-orm.database.generation=update
+#quarkus.hibernate-orm.database.default-schema=todo
+
+quarkus.log.level=INFO
+quarkus.log.min-level=INFO
+quarkus.log.console.enable=true
+quarkus.log.console.format=%d{HH:mm:ss} %-5p [%c] %s%e%n
+quarkus.application.name=quarkus-final-todoLists
+quarkus.opentelemetry.enabled=true
+quarkus.opentelemetry.tracer.exporter.otlp.endpoint=http://localhost:8080
+quarkus.opentelemetry.tracer.exporter.otlp.headers=Authorization=Bearer my_secret
+<properties>
+ <maven.compiler.source>1.8</maven.compiler.source>
+ <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
